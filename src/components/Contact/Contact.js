@@ -39,12 +39,16 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
-    console.log("clicked");
 
     emailjs
-      .sendForm("service_323b3px", "template_ed66awk", form.current, {
-        publicKey: "2AV4pDaS03KwXZvw0",
-      })
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           setLoading(false);
