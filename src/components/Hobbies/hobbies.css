@@ -1,0 +1,79 @@
+.hobbies-background-section{
+  background: url("../../assets/hobbies.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hobbies {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hobbies-title {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hobbies-description {
+  font-weight: 300;
+  font-size: 1rem;
+  max-width: 60rem;
+  padding: 0 2rem;
+}
+
+.hobby-bars {
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  text-align: left;
+}
+
+.hobby-bar {
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #302a379f;
+}
+
+.hobby-bar-img {
+  object-fit: cover;
+  height: 4rem;
+  width: 4rem;
+  margin-right: 2rem;
+}
+
+.hobby-bar-text > p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 720px) {
+  .hobby-bar-text {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hobby-bar-text {
+    font-size: 3vw;
+  }
+
+  .hobby-bar-img {
+    height: 3.25rem;
+    width: 3.25rem;
+  }
+
+  .skill-bar-text > h2 {
+    font-size: 5vw;
+  }
+}
