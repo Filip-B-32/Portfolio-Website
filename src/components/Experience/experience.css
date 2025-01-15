@@ -110,6 +110,45 @@
 }
 
 @media screen and (max-width: 768px) {
+  .experience-title {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .experience-description {
+    font-weight: 300;
+    font-size: small;
+    max-width: 60rem;
+    padding: 0 2rem;
+  }
+
+  .timeline-content h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .timeline-content span {
+    font-size: small;
+    color: white;
+  }
+
+  .timeline-date {
+    color: yellow;
+    margin-bottom: 1rem;
+    font-size: 15px;
+  }
+
+  .timeline-content p {
+    font-size: small;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: #888;
+  }
+
   .container:before {
     left: 8px;
     width: 2px;

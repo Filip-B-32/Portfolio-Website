@@ -64,4 +64,26 @@
     .bg{
         right: -20vw;
     }
+
+    .hello{
+        font-size: 1.45rem;
+        font-weight: 100;
+    }
+
+    .introPara{
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
+    .introContent{
+        height: 100vh;
+        width: 100vw;
+        padding: 2rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
