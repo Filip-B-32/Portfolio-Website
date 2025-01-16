@@ -1,5 +1,7 @@
+@import url("../../colors.css");
+
 .navbar {
-  background: #1f1926;
+  background: var(--navbar-background-color);
   height: 5rem;
   width: 100vw;
   max-width: 100vw;
@@ -15,8 +17,8 @@
 
 .logo {
   object-fit: cover; /*doesn't strech image*/
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .desktopMenuListItem {
@@ -25,15 +27,15 @@
 }
 
 .desktopMenuListItem:hover {
-  color: yellow;
+  color: var(--highlight-color);
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid yellow;
+  border-bottom: 3px solid var(--highlight-color);
 }
 
 .desktopMenuBtn {
   border: none;
-  background: white;
-  color: black;
+  background: var(--button-background-color);
+  color: var(--button-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,8 +52,8 @@
 }
 
 .active {
-  color: yellow;
-  border-bottom: 3px solid yellow;
+  color: var(--highlight-color);
+  border-bottom: 3px solid var(--highlight-color);
   padding-bottom: 0.5rem;
 }
 
@@ -72,24 +74,24 @@
   padding: 0.5rem;
   height: fit-content;
   min-width: 15rem;
-  background: #302a37;
+  background: var(--background-color);
   border-radius: 1rem;
 }
 
 .listItem {
   padding: 0.5rem 3rem;
   margin: 0.25rem;
-  background: #1f1926;
+  background: var(--list-background-color);
   cursor: pointer;
 }
 
 @media screen and (max-width: 720px) {
-  .logo{
-    height: 2.5rem;
-    width: 2.5rem;
+  .logo {
+    height: 2rem;
+    width: 2rem;
   }
 
-  .navbar{
+  .navbar {
     padding: 1rem 2rem;
     height: 4.5rem;
   }

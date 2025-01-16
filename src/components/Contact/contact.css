@@ -1,3 +1,5 @@
+@import url("../../colors.css");
+
 #contact {
   min-height: calc(100vh - 4rem);
   width: 100vw;
@@ -42,14 +44,14 @@
   max-width: 40rem;
   margin: 0.5rem;
   padding: 0.5rem 1rem;
-  color: white;
+  color: var(--text-color);
   border: none;
   border-radius: 0.5rem;
-  background: #302a37;
+  background: var(--input-background-color);
 }
 
 .submit-button {
-  background: white;
+  background: var(--button-background-color);
   border: none;
   padding: 0.75rem 3.5rem;
   border-radius: 0.5rem;
@@ -93,10 +95,8 @@
     max-width: 40rem;
     margin: 0.5rem;
     padding: 0.5rem 0.5rem;
-    color: white;
     border: none;
     border-radius: 0.5rem;
-    background: #302a37;
   }
 
   .link {

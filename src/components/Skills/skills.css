@@ -1,3 +1,5 @@
+@import url("../../colors.css");
+
 .skills {
   overflow: hidden;
   width: 100vw;
@@ -24,6 +26,10 @@
   padding: 0 2rem;
 }
 
+.timeline-content > h3 {
+  color: var(--highlight-color);
+}
+
 .skill-bars {
   margin: 1.5rem;
   width: 100vw;
@@ -36,7 +42,7 @@
   margin: 1rem;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
-  background: #302a37;
+  background: var(--card-background-color);
 }
 
 .skill-bar-img {
@@ -78,7 +84,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
-    background: #302a37;
     padding: 1.5rem;
   }
 
@@ -101,6 +106,6 @@
   .skill-bar-text > p {
     margin-top: 0.5rem;
     font-size: 3vw;
-    font-weight: 200;
+    font-weight: 300;
   }
 }

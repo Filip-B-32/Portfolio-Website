@@ -89,8 +89,8 @@ const Contact = () => {
         <h1 className="contact-title">Contact me</h1>
         <span className="contact-description">
           Feel free to reach out to me for discussions regarding potential work
-          opportunities and to obtain a copy of my CV. I eagerly welcome the
-          chance to explore potential collaborations and opportunities together.
+          opportunities. I eagerly welcome the chance to explore potential
+          collaborations and opportunities together.
         </span>
         <form ref={form} className="contact-form" onSubmit={sendEmail}>
           <input

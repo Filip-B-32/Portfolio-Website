@@ -1,3 +1,5 @@
+@import url("../../colors.css");
+
 .hobbies-background-section {
   background: url("../../assets/hobbies.png");
   background-repeat: no-repeat;
@@ -42,7 +44,7 @@
   margin: 1rem;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
-  background: #302a379f;
+  background: var(--card-background-color);
 }
 
 .hobby-bar-img {
@@ -111,6 +113,6 @@
   .hobby-bar-text > p {
     margin-top: 0.5rem;
     font-size: 3vw;
-    font-weight: 200;
+    font-weight: 300;
   }
 }

@@ -8,7 +8,7 @@ import Learning from "../../assets/learning.png";
 const Skills = () => {
   return (
     <section id="skills" className="skills">
-      <span className="skill-title">What i do</span>
+      <span className="skill-title">What I do</span>
       <span className="skill-description">
         With a solid background in web application development, I bring
         expertise in React, JavaScript, TypeScript, HTML, CSS, ASP.NET Core,
