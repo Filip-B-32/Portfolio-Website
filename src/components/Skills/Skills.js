@@ -10,20 +10,40 @@ const Skills = () => {
     <section id="skills" className="skills">
       <span className="skill-title">What I do</span>
       <span className="skill-description">
-        With a solid background in web application development, I bring
-        expertise in React, JavaScript, TypeScript, HTML, CSS, ASP.NET Core,
-        Redux Toolkit, Python, Django Rest Framework, Docker, MobX, and
-        PostgreSQL. My experience spans diverse projects where I've honed the
-        ability to deliver exceptional user experiences by transforming client
-        requirements into intuitive and visually appealing applications. I excel
-        at seamlessly integrating established designs while applying creative
-        solutions to enhance the final product's functionality and aesthetics.
-        Committed to delivering high-quality projects and consistently exceeding
-        expectations, I am eager to bring my skills, enthusiasm, and dedication
-        to a dynamic and innovative team. With a commitment to quality and
-        continuous improvement, I consistently deliver impactful results that
-        exceed expectations.
+        I am a passionate and skilled web application developer with a solid
+        background in creating dynamic, intuitive, and visually appealing
+        applications. My expertise lies in transforming complex client
+        requirements into seamless user experiences while integrating
+        established designs and applying innovative solutions to enhance
+        functionality and aesthetics. Dedicated to delivering high-quality
+        projects, I strive to exceed expectations through a commitment to
+        continuous improvement and impactful results.
       </span>
+      <br></br>
+      <div className="technical-expertise">
+        <h3>Technical Expertise</h3>
+        <div className="technical-item">
+          <span className="list-element-highlight">Languages & Markup:</span>{" "}
+          JavaScript, TypeScript, Python, HTML, CSS, SQL
+        </div>
+        <div className="technical-item">
+          <span className="list-element-highlight">
+            Frontend Frameworks & Libraries:
+          </span>{" "}
+          React, Redux Toolkit, MobX
+        </div>
+        <div className="technical-item">
+          <span className="list-element-highlight">Backend Frameworks:</span>{" "}
+          ASP.NET Core, Django Rest Framework
+        </div>
+        <div className="technical-item">
+          <span className="list-element-highlight">DevOps & Tools:</span> Docker
+        </div>
+        <div className="technical-item">
+          <span className="list-element-highlight">Databases:</span> PostgreSQL,
+          SSMS (SQL Server Management Studio), Microsoft SQL Server
+        </div>
+      </div>
       <div className="skill-bars">
         <div className="skill-bar">
           <img src={Fullstack} alt="Fullstack" className="skill-bar-img" />
