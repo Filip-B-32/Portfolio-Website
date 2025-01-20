@@ -130,7 +130,7 @@ const Navbar = () => {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-49}
           duration={500}
           className="listItem"
           onClick={() => setShowMenu(false)}
