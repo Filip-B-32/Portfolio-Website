@@ -96,21 +96,6 @@ const Experience = () => {
             </p>
           </div>
         </div>
-
-        <div class="timeline-block timeline-block-right">
-          <div class="marker"></div>
-          <div class="timeline-content">
-            <h3>High school graduate, Mathematics-Informatics</h3>
-            <span>National College "Emanoil Gojdu", Oradea</span>
-            <br></br>
-            <div className="timeline-date">Sep 2016 - Jul 2020</div>
-            <p>
-              In high school, I discovered my fervor for coding and programming,
-              nurturing both my mathematical acumen and my adept programmer's
-              perspective.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

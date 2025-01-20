@@ -10,14 +10,13 @@ const Skills = () => {
     <section id="skills" className="skills">
       <span className="skill-title">What I do</span>
       <span className="skill-description">
-        I am a passionate and skilled web application developer with a solid
-        background in creating dynamic, intuitive, and visually appealing
-        applications. My expertise lies in transforming complex client
-        requirements into seamless user experiences while integrating
-        established designs and applying innovative solutions to enhance
-        functionality and aesthetics. Dedicated to delivering high-quality
-        projects, I strive to exceed expectations through a commitment to
-        continuous improvement and impactful results.
+        Passionate and experienced in web application development, I specialize
+        in creating dynamic, intuitive, and visually appealing applications. I
+        excel at transforming complex client requirements into seamless user
+        experiences, integrating established designs, and applying innovative
+        solutions to enhance functionality and aesthetics. Committed to
+        delivering high-quality projects, I continuously strive to exceed
+        expectations through ongoing improvement and impactful results.
       </span>
       <br></br>
       <div className="technical-expertise">

@@ -18,7 +18,7 @@ const Intro = () => {
           I'm <span className="introName">Bogdan</span> <br></br> Web Developer
         </span>
         <p className="introPara">
-          I'm a highly skilled and detail-oriented web developer <br></br> with a strong
+          I'm a experienced and detail-oriented web developer <br></br> with a strong
           focus on building modern, responsive <br></br> and scalable web applications.
           Passionate about creating <br></br> seamless user experiences, I excel at
           turning complex ideas <br></br> into innovative and efficient solutions.
