@@ -1,0 +1,85 @@
+@import url("../../colors.css");
+
+.pandc {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pandc-content-wrapper {
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  text-align: left;
+}
+
+.pandc-content-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: var(--card-background-color);
+}
+
+.projects-title,
+.contributions-title,
+.github-link {
+  color: var(--highlight-color);
+}
+
+.github-link {
+  text-decoration: underline;
+}
+
+.pandc-title {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.pandc-description {
+  font-weight: 300;
+  font-size: 1rem;
+  max-width: 60rem;
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .pandc-title {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .pandc-description,
+  .pandc-content-item > p,
+  ul {
+    font-weight: 300;
+    font-size: small;
+    max-width: 60rem;
+    padding: 0 1rem;
+  }
+
+  .pandc-content-item > h2 {
+    font-weight: 500;
+    font-size: medium;
+    max-width: 60rem;
+    padding: 0 1rem;
+  }
+
+  .projects-title,
+  .contributions-title {
+    font-weight: 500;
+    font-size: medium;
+    max-width: 60rem;
+  }
+}

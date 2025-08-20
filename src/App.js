@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Hobbies from "./components/Hobbies/Hobbies";
 import Intro from "./components/Intro/Intro";
 import Navbar from "./components/Navbar/Navbar";
+import ProjectsandContributions from "./components/ProjectsAndContributions/ProjectsandContributions";
 import Skills from "./components/Skills/Skills";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Intro />
       <Skills />
       <Experience />
+      <ProjectsandContributions />
       <Hobbies />
       <Contact />
       <Footer />

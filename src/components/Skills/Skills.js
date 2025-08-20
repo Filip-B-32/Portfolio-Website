@@ -23,24 +23,34 @@ const Skills = () => {
         <h3>Technical Expertise</h3>
         <div className="technical-item">
           <span className="list-element-highlight">Languages & Markup:</span>{" "}
-          JavaScript, TypeScript, Python, HTML, CSS, SQL
+          JavaScript, TypeScript, Python, C#, C/C++ (familiar), HTML, CSS, SQL
         </div>
         <div className="technical-item">
           <span className="list-element-highlight">
             Frontend Frameworks & Libraries:
           </span>{" "}
-          React, Redux Toolkit, MobX
+          React, Redux Toolkit, MobX(familiar)
         </div>
         <div className="technical-item">
           <span className="list-element-highlight">Backend Frameworks:</span>{" "}
-          ASP.NET Core, Django Rest Framework
+          ASP.NET Core, Django Rest Framework(familiar), Node.js (familiar)
         </div>
         <div className="technical-item">
-          <span className="list-element-highlight">DevOps & Tools:</span> Docker
+          <span className="list-element-highlight">DevOps & Tools:</span>{" "}
+          Docker, setting up sites on IIS + IIS express
         </div>
         <div className="technical-item">
           <span className="list-element-highlight">Databases:</span> PostgreSQL,
-          SSMS (SQL Server Management Studio), Microsoft SQL Server
+          SSMS (SQL Server Management Studio), Microsoft SQL Server, MongoDB
+          (familiar)
+        </div>
+      </div>
+      <div className="technical-expertise">
+        <h3>Language Skills</h3>
+        <div className="technical-item">
+          <span className="list-element-highlight">Languages:</span> Romanian
+          (native), English (fluent/professional), German (conversational),
+          Italian (basic)
         </div>
       </div>
       <div className="skill-bars">

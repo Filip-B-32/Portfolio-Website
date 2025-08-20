@@ -5,6 +5,7 @@ import Gym from "../../assets/gym.png";
 import Music from "../../assets/music.png";
 import Guitar from "../../assets/guitar.png";
 import Traveling from "../../assets/traveling.png";
+import LanguageLearning from "../../assets/language.png";
 
 const Hobbies = () => {
   return (
@@ -75,6 +76,22 @@ const Hobbies = () => {
                 While I'm just beginning my journey as a traveler, I'm eager to
                 explore new cultures, taste exotic cuisines, and create
                 unforgettable memories around the globe.
+              </p>
+            </div>
+          </div>
+          <div className="hobby-bar">
+            <img
+              src={LanguageLearning}
+              alt="Learning-new-languages"
+              className="hobby-bar-img"
+            />
+            <div className="hobby-bar-text">
+              <h2>Learning new Languages</h2>
+              <p>
+                Passionate about languages, I love discovering new ways to
+                communicate, exploring different cultures through their words,
+                and continuously expanding my linguistic skills to connect with
+                people around the world.
               </p>
             </div>
           </div>

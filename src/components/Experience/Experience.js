@@ -11,6 +11,28 @@ const Experience = () => {
         products of the highest quality.
       </span>
       <div class="container">
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Full-Stack Developer</h3>
+            <span>CodexWorks Technologies, Cluj-Napoca</span>
+            <br></br>
+            <div className="timeline-date">Feb 2025 - Present</div>
+            <p>
+              As a full-stack developer, I gained valuable experience in
+              teamwork, cooperation, and effective time management to
+              consistently deliver projects on schedule. I learned what it truly
+              means to work in production environments, including how to deploy
+              applications to production servers and configure websites on IIS.
+              My work involved React.js, Docker, and .NET Core, where I
+              contributed to building and maintaining scalable applications. I
+              also explored testing practices by running Cypress automated
+              tests, documented technical processes, and created prototypes
+              through research and experimentation—many of which later evolved
+              into key features in the application.
+            </p>
+          </div>
+        </div>
         <div class="timeline-block timeline-block-left">
           <div class="marker"></div>
           <div class="timeline-content">
