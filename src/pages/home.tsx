@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs from "@emailjs/browser";
-import { CircularProgress } from "@mui/material";
 import { z } from "zod";
 import { Navbar } from "@/components/layout/navbar";
 import { Button } from "@/components/ui/button";
