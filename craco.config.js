@@ -11,6 +11,15 @@ module.exports = {
       webpackConfig.plugins = webpackConfig.plugins.filter(
         plugin => plugin.constructor.name !== 'ESLintWebpackPlugin'
       );
+      
+      // Disable CSS minification to avoid postcss-calc issues
+      const miniCssExtractPlugin = webpackConfig.plugins.find(
+        plugin => plugin.constructor.name === 'MiniCssExtractPlugin'
+      );
+      if (miniCssExtractPlugin) {
+        miniCssExtractPlugin.options.ignoreOrder = true;
+      }
+      
       return webpackConfig;
     }
   },
@@ -19,9 +28,9 @@ module.exports = {
       mode: 'extends',
       loaderOptions: {
         postcssOptions: {
+          config: false, // Disable postcss.config.js
           plugins: [
-            // Remove postcss-calc to prevent CSS variable processing issues
-            // The browser will handle the calc() with CSS variables at runtime
+            // Only use autoprefixer, skip postcss-calc
             require('autoprefixer'),
           ],
         },
