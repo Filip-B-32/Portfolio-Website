@@ -1,0 +1,21 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.processing.css]
+  # Ignore postcss-calc parsing errors for tw-animate-css
+  ignore_processing = ["**/node_modules/tw-animate-css/**/*.css"]
+
+[build.processing]
+  # Disable CSS minification to avoid issues with postcss-calc
+  css = { minify = false }
+  js = { minify = true }
+  html = { pretty_urls = true }
+  images = { compress = true }
