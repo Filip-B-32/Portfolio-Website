@@ -50,6 +50,7 @@ import {
   Dumbbell,
   PlaneTakeoff,
   CodeXml,
+  Mountain
 } from "lucide-react";
 import heroBg from "@/assets/abstract_dark_purple_digital_geometric_background.png";
 import profilePhoto from "@/assets/profile_photo/profile_photo.jpg";
@@ -755,9 +756,9 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   {
-                    icon: <Camera className="w-6 h-6" />,
-                    name: "Photography",
-                    desc: "Capturing moments",
+                    icon: <Mountain className="w-6 h-6" />,
+                    name: "Hiking",
+                    desc: "Exploring trails and embracing nature",
                   },
                   {
                     icon: <Music className="w-6 h-6" />,
