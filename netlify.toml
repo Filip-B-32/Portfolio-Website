@@ -18,5 +18,5 @@
     pretty_urls = true
   [build.processing.images]
     compress = true
-  [build.processing.skip_processing]
-    - "**/node_modules/tw-animate-css/**/*.css"
+  [build.processing]
+    skip_processing = ["**/node_modules/tw-animate-css/**/*.css"]
