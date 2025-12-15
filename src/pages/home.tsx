@@ -766,11 +766,6 @@ export default function Home() {
                     desc: "Making beats",
                   },
                   {
-                    icon: <Smartphone className="w-6 h-6" />,
-                    name: "Tech Reviewing",
-                    desc: "Latest gadgets",
-                  },
-                  {
                     icon: <PlaneTakeoff className="w-6 h-6" />,
                     name: "Traveling",
                     desc: "Travel, culture, adventure, exploration",
@@ -779,11 +774,6 @@ export default function Home() {
                     icon: <Dumbbell className="w-6 h-6" />,
                     name: "Gym and Sports",
                     desc: "Fitness, discipline, health, balance",
-                  },
-                  {
-                    icon: <CodeXml className="w-6 h-6" />,
-                    name: "Programming",
-                    desc: "Coding, innovation, problem-solving",
                   },
                 ].map((hobby, i) => (
                   <Card
