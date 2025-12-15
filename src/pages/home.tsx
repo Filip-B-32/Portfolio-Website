@@ -50,7 +50,7 @@ import {
   Dumbbell,
   PlaneTakeoff,
   CodeXml,
-  Mountain
+  Mountain,
 } from "lucide-react";
 import heroBg from "@/assets/abstract_dark_purple_digital_geometric_background.png";
 import profilePhoto from "@/assets/profile_photo/profile_photo.jpg";
@@ -100,7 +100,7 @@ const projects = [
     description:
       "An interactive music library that allows users to explore artists, albums, and songs with smooth navigation and an engaging interface.",
     image: vibeZoneImg,
-    tech: ["React", ".Net Core / EF Core", "SQL Server"],
+    tech: ["React", "C#", ".Net Core / EF Core", "SQL Server"],
     github: "https://github.com/Filip-B-32/VibeZone---Digital-music-library",
     demo: "#",
   },
@@ -121,6 +121,7 @@ const projects = [
     tech: [
       "React",
       "Typescript",
+      "C#",
       ".Net Core / EF Core",
       "SQL Server",
       "Chakra UI",
