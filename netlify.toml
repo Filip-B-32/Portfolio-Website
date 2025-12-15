@@ -9,14 +9,15 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-[build.processing]
-  [build.processing.css]
-    minify = false
-  [build.processing.js]
-    minify = true
-  [build.processing.html]
-    pretty_urls = true
-  [build.processing.images]
-    compress = true
-  [build.processing]
-    skip_processing = ["**/node_modules/tw-animate-css/**/*.css"]
+[build.processing.css]
+  minify = false
+  skip_processing = ["**/node_modules/tw-animate-css/**/*.css"]
+
+[build.processing.js]
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
