@@ -9,13 +9,14 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-[build.processing.css]
-  # Ignore postcss-calc parsing errors for tw-animate-css
-  ignore_processing = ["**/node_modules/tw-animate-css/**/*.css"]
-
 [build.processing]
-  # Disable CSS minification to avoid issues with postcss-calc
-  css = { minify = false }
-  js = { minify = true }
-  html = { pretty_urls = true }
-  images = { compress = true }
+  [build.processing.css]
+    minify = false
+  [build.processing.js]
+    minify = true
+  [build.processing.html]
+    pretty_urls = true
+  [build.processing.images]
+    compress = true
+  [build.processing.skip_processing]
+    - "**/node_modules/tw-animate-css/**/*.css"
