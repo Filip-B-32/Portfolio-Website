@@ -276,7 +276,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section
         id="home"
-        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
       >
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
@@ -293,12 +293,12 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
-            className="max-w-3xl"
+            className="max-w-2xl"
           >
             <motion.div variants={fadeInUp}>
               <Badge
                 variant="outline"
-                className="mb-6 border-primary/50 text-primary bg-primary/10 px-4 py-1 text-sm backdrop-blur-md"
+                className="mb-5 border-primary/50 text-primary bg-primary/10 px-3 py-1 text-sm backdrop-blur-md"
               >
                 Full-Stack Developer | AI Enthusiast
               </Badge>
@@ -306,7 +306,7 @@ export default function Home() {
 
             <motion.h1
               variants={fadeInUp}
-              className="text-5xl md:text-7xl lg:text-8xl font-bold font-display mb-6 leading-tight"
+              className="text-4xl md:text-6xl lg:text-7xl font-bold font-display mb-5 leading-tight"
             >
               Building the <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-400 to-cyan-400 text-glow">
@@ -316,7 +316,7 @@ export default function Home() {
 
             <motion.p
               variants={fadeInUp}
-              className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed"
+              className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl leading-relaxed"
             >
               I build modern and scalable web applications with a focus on clean
               implementation, great user experience, and a growing interest in
@@ -326,15 +326,16 @@ export default function Home() {
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-white px-8 rounded-full h-12 text-lg shadow-[0_0_20px_rgba(147,51,234,0.3)]"
+                className="bg-primary hover:bg-primary/90 text-white px-7 rounded-full h-11 text-base shadow-[0_0_16px_rgba(147,51,234,0.3)]"
                 onClick={() => scrollToSection("experience")}
               >
                 View My Work
               </Button>
+
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/20 hover:bg-white/10 rounded-full h-12 text-lg"
+                className="border-white/20 hover:bg-white/10 rounded-full h-11 text-base"
                 onClick={() => scrollToSection("contact")}
               >
                 Contact Me
@@ -347,7 +348,7 @@ export default function Home() {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-muted-foreground"
+          className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2"
         >
           <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center p-1">
             <div className="w-1 h-2 bg-primary rounded-full" />
@@ -380,7 +381,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-6">
                 About Me
               </h2>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-md text-muted-foreground mb-6 leading-relaxed">
                 I am a web developer focused on building modern, responsive, and
                 scalable applications, with a strong passion for AI-driven
                 solutions and seamless user experiences. I enjoy transforming
@@ -388,7 +389,7 @@ export default function Home() {
                 code while continuously exploring new technologies to deliver
                 high-quality digital products.
               </p>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-md text-muted-foreground mb-8 leading-relaxed">
                 My philosophy is simple: write clean code, design with the user
                 in mind, and never stop learning. Outside of coding, I
                 continuously explore new technologies.
@@ -816,7 +817,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
                 Let's Work Together
               </h2>
-              <p className="text-muted-foreground text-lg">
+              <p className="text-muted-foreground text-md">
                 Have a project in mind or just want to say hi? I'd love to hear
                 from you.
               </p>

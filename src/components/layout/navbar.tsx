@@ -1,7 +1,20 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Github, Linkedin, Twitter, Mail, Download, ExternalLink, Code2, Terminal, Cpu, Globe } from "lucide-react";
+import {
+  Menu,
+  X,
+  Github,
+  Linkedin,
+  Twitter,
+  Mail,
+  Download,
+  ExternalLink,
+  Code2,
+  Terminal,
+  Cpu,
+  Globe,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import resumePdf from "@/documents/CV-Bogdan-Filip.pdf";
@@ -14,9 +27,16 @@ export function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-      
-      const sections = ["home", "about", "experience", "skills", "projects", "contact"];
-      const current = sections.find(section => {
+
+      const sections = [
+        "home",
+        "about",
+        "experience",
+        "skills",
+        "projects",
+        "contact",
+      ];
+      const current = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
@@ -33,10 +53,15 @@ export function Navbar() {
 
   const scrollToSection = (id) => {
     setIsOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    });
   };
 
   const downloadCV = () => {
@@ -61,13 +86,17 @@ export function Navbar() {
   ];
 
   return (
-    <nav className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent",
-      scrolled ? "bg-background/80 backdrop-blur-md border-white/10 shadow-lg py-4" : "bg-transparent py-6"
-    )}>
+    <nav
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent",
+        scrolled
+          ? "bg-background/80 backdrop-blur-md border-white/10 shadow-lg py-4"
+          : "bg-transparent py-6"
+      )}
+    >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <div 
-          onClick={() => scrollToSection("home")} 
+        <div
+          onClick={() => scrollToSection("home")}
           className="text-2xl font-bold font-display cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-400"
         >
           BOGDAN.DEV
@@ -81,14 +110,16 @@ export function Navbar() {
               onClick={() => scrollToSection(link.href)}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
-                activeSection === link.href ? "text-primary" : "text-muted-foreground"
+                activeSection === link.href
+                  ? "text-primary"
+                  : "text-muted-foreground"
               )}
             >
               {link.name}
             </button>
           ))}
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             className="border-primary/50 text-primary hover:bg-primary/10 hover:text-primary"
             onClick={downloadCV}
           >
@@ -97,7 +128,7 @@ export function Navbar() {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden text-foreground"
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -124,7 +155,11 @@ export function Navbar() {
                   {link.name}
                 </button>
               ))}
-              <Button className="w-full mt-4" variant="default" onClick={downloadCV}>
+              <Button
+                className="w-full mt-4"
+                variant="default"
+                onClick={downloadCV}
+              >
                 Download CV
               </Button>
             </div>
