@@ -58,6 +58,7 @@ import statusCurrentImg from "@/assets/projects_images/status_current.png";
 import vibeZoneImg from "@/assets/projects_images/vibe_zone.png";
 import portfolioSiteImg from "@assets/projects_images/portfolio_site.png";
 import routierImg from "@assets/projects_images/routier.png";
+import aiInterviewerImg from "@assets/projects_images/ai_interviewer.png";
 import scicanImg from "@assets/projects_images/scican.png";
 import stareAppImg from "@assets/projects_images/stare_app.png";
 import resumePdf from "@/documents/CV-Bogdan-Filip.pdf";
@@ -76,6 +77,66 @@ const fadeInUp = {
 
 // Featured projects data
 const projects = [
+  {
+    title: "AI Interviewer",
+    description:
+      "AI-powered interactive interview application: generates intelligent questions, collects answers, and produces summaries with sentiment analysis.",
+    image: aiInterviewerImg,
+    tech: [
+      "React",
+      "Vite",
+      "FastAPI",
+      "TailwindCSS",
+      "Groq API",
+      "TextBlob",
+      "scikit-learn",
+    ],
+    github: "#",
+    demo: "#",
+  },
+  {
+    title: "Maria AI - Hotel Management Agent",
+    description:
+      "Built an AI-powered virtual receptionist for hotels and accommodations that handles guest inquiries, bookings, and general information through text and voice interactions, providing automated support and improving operational efficiency.",
+    image: "#",
+    tech: [
+      "React",
+      "NestJS",
+      "PostgreSQL",
+      "Prisma ORM",
+      "OpenAI SDK",
+      "AWS (S3, Lambda)",
+      "ElevenLabs",
+    ],
+    github: "#",
+    demo: "#",
+  },
+  {
+    title: "Routier - Enterprise Resource Planning",
+    description:
+      "Contributed to an ERP system for a major logistics and transport company. Delivered production-ready code, built a notification system with gRPC and Redis, and worked with complex multi-VM deployments while enhancing .NET Core and React expertise.",
+    image: routierImg,
+    tech: [
+      "React",
+      "React Redux",
+      ".NET Core",
+      "PostgreSQL",
+      "Docker",
+      "Redis",
+      "IIS",
+    ],
+    github: "#",
+    demo: "#",
+  },
+  {
+    title: "Elpis - Warehouse Management System",
+    description:
+      "Developed and implemented key features to optimize operations and efficiency in a Warehouse Management System. Worked on both frontend and backend, delivering a user-friendly interface and scalable functionality.",
+    image: "#",
+    tech: ["React", "MobX", "Django Rest Framework", "PostgreSQL", "Docker"],
+    github: "#",
+    demo: "#",
+  },
   {
     title: "StatusCurrent - Blog Application",
     description:
@@ -148,32 +209,6 @@ const projects = [
     demo: "#",
   },
   {
-    title: "Routier - Enterprise Resource Planning",
-    description:
-      "Contributed to an ERP system for a major logistics and transport company. Delivered production-ready code, built a notification system with gRPC and Redis, and worked with complex multi-VM deployments while enhancing .NET Core and React expertise.",
-    image: routierImg,
-    tech: [
-      "React",
-      "React Redux",
-      ".NET Core",
-      "PostgreSQL",
-      "Docker",
-      "Redis",
-      "IIS",
-    ],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Elpis - Warehouse Management System",
-    description:
-      "Developed and implemented key features to optimize operations and efficiency in a Warehouse Management System. Worked on both frontend and backend, delivering a user-friendly interface and scalable functionality.",
-    image: "#",
-    tech: ["React", "MobX", "Django Rest Framework", "PostgreSQL", "Docker"],
-    github: "#",
-    demo: "#",
-  },
-  {
     title: "SciCan Project",
     description:
       "Frontend developer for a global infection control solutions provider. Built features in React.js, collaborated with backend developers, and transformed designs into interactive, user-friendly interfaces.",
@@ -229,7 +264,7 @@ export default function Home() {
           user_email: data.email,
           message: data.message,
         },
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY!,
       )
       .then(
         () => {
@@ -248,7 +283,7 @@ export default function Home() {
             variant: "destructive",
           });
           setLoading(false);
-        }
+        },
       );
   }
 
@@ -319,8 +354,9 @@ export default function Home() {
               className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl leading-relaxed"
             >
               I build modern and scalable web applications with a focus on clean
-              implementation, great user experience, and a growing interest in
-              AI-powered technologies.
+              implementation and great user experience, with a strong emphasis
+              on integrating AI-powered technologies to create smarter, more
+              adaptive solutions.
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
@@ -382,12 +418,15 @@ export default function Home() {
                 About Me
               </h2>
               <p className="text-md text-muted-foreground mb-6 leading-relaxed">
-                I am a web developer focused on building modern, responsive, and
-                scalable applications, with a strong passion for AI-driven
-                solutions and seamless user experiences. I enjoy transforming
-                complex requirements into clean, efficient, and maintainable
-                code while continuously exploring new technologies to deliver
-                high-quality digital products.
+                I am an AI-focused developer specializing in building
+                intelligent agents and AI-driven systems, while also developing
+                modern, responsive, and scalable web applications. I’m
+                passionate about designing solutions that leverage AI to
+                automate workflows, enhance decision-making, and deliver highly
+                adaptive user experiences. I enjoy transforming complex
+                requirements into clean, efficient, and maintainable systems,
+                continuously exploring new technologies to create high-impact,
+                AI-powered products.
               </p>
               <p className="text-md text-muted-foreground mb-8 leading-relaxed">
                 My philosophy is simple: write clean code, design with the user
@@ -436,9 +475,16 @@ export default function Home() {
 
             {[
               {
+                role: "Full-Stack AI Developer",
+                company: "CodexWorks Technologies",
+                period: "Feb 2026 - Present",
+                description:
+                  "Built and developed AI-driven agents, including voice-enabled systems, focusing on real-time interaction through messaging and calls. Researched, tested, and integrated multiple AI APIs to evaluate performance and optimize functionality, gaining hands-on experience in designing scalable, production-ready AI solutions.",
+              },
+              {
                 role: "Full-Stack Developer",
                 company: "CodexWorks Technologies",
-                period: "Feb 2025 - Present",
+                period: "Feb 2025 - Feb 2026",
                 description:
                   "As a full-stack developer, I gained experience delivering projects on time and collaborating in production environments. One of my achievements was implementing a real-time notification system with Redis and gRPC, improving delivery speed by around 75%.",
               },
@@ -481,7 +527,7 @@ export default function Home() {
                   "relative flex flex-col md:flex-row gap-8 md:gap-0",
                   index % 2 === 0
                     ? "md:text-right"
-                    : "md:flex-row-reverse md:text-left"
+                    : "md:flex-row-reverse md:text-left",
                 )}
               >
                 <div className="md:w-1/2 md:px-12">
@@ -525,6 +571,7 @@ export default function Home() {
                   "Bootstrap",
                   "React",
                   "React Redux / Toolkit / MobX",
+                  "Axios / Fetch API",
                   "React Testing / Vitest / Jest",
                   "End-to-End Testing (E2E)",
                 ],
@@ -535,10 +582,13 @@ export default function Home() {
                 skills: [
                   "Node.js",
                   "Express.js",
+                  "NestJS",
                   "C#",
                   ".NET Core / Entity Framework (EF)",
                   "Python",
                   "Django Rest Framework",
+                  "FastAPI",
+                  "REST APIs",
                   "Redis",
                   "Moq",
                   "xUnit",
@@ -552,12 +602,18 @@ export default function Home() {
                 category: "Tools",
                 icon: <Code2 className="w-8 h-8 text-pink-400" />,
                 skills: [
+                  "AI APIs (OpenAI, Groq, ElevenLabs)",
+                  "RAG / LangChain / LangGraph",
+                  "Vector DB (Pinecone)",
                   "Git",
                   "GitHub",
                   "Bitbucket",
                   "Sourcetree",
                   "Git Tortoise",
                   "Docker",
+                  "AWS (Lambda, S3)",
+                  "Azure OpenAI",
+                  "IIS",
                   "Figma",
                   "VS Code",
                   "Visual Studio",
@@ -581,6 +637,7 @@ export default function Home() {
                   "Creativity",
                   "Empathy",
                   "Continuous Learning",
+                  "Agile / Scrum",
                 ],
               },
             ].map((group, idx) => (
@@ -641,7 +698,7 @@ export default function Home() {
                 className="group relative"
               >
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-cyan-500 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-500" />
-                <Card className="relative h-full bg-card border-white/10 overflow-hidden">
+                <Card className="relative h-full flex flex-col bg-card border-white/10 overflow-hidden">
                   <div className="h-48 bg-muted flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
                     {project.image === "#" ? (
@@ -660,7 +717,7 @@ export default function Home() {
                     <CardTitle>{project.title}</CardTitle>
                     <CardDescription>{project.description}</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-1 flex flex-col">
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.tech.map((t) => (
                         <Badge
@@ -673,7 +730,7 @@ export default function Home() {
                       ))}
                     </div>
                     {(project.github !== "#" || project.demo !== "#") && (
-                      <div className="flex gap-4">
+                      <div className="flex gap-4 mt-auto">
                         {project.demo !== "#" && (
                           <Button
                             size="sm"
