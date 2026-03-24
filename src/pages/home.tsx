@@ -91,7 +91,7 @@ const projects = [
       "TextBlob",
       "scikit-learn",
     ],
-    github: "#",
+    github: "https://github.com/Filip-B-32/AI-Interviewer",
     demo: "#",
   },
   {
